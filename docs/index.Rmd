@@ -1,7 +1,7 @@
 ---
-title: "Example Covid Report"
-author: "INFO-201: Class Demo"
-date: "2/7/2022"
+title: "COVID Report"
+author: "Jing Cao"
+date: "11/10/2022"
 output: html_document
 ---
 
@@ -10,13 +10,10 @@ source("../source/analysis.R")
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Covid Report
-I write a paragraph here. I will highlight that the total number of US cases is `r get_total_cases()`. And, the total number of US deaths is `r get_total_deaths()`. 
+## Summary
+The total number of COVID cases is `r get_total_cases()` in the US. And, the total number of COVID deaths is `r get_total_deaths()` in the US.
 
-(**Note**: Why are there no commas in the *total number of US deaths* ? Can you change `analysis.R` file so that the number is commented with commas?)
-
-I also want to show the chart:
+## Visualization
 ``` {r echo=FALSE}
 cases_plot
 ```
-
